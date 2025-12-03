@@ -1,0 +1,157 @@
+.card {
+  .btn {
+    width: 103px;
+    &:hover {
+      background-color: #013bac;
+    }
+  }
+}
+.shop {
+  height: 52px;
+}
+.navbar {
+  .logo {
+    width: 30px;
+  }
+  ul {
+    li {
+      line-height: 51px;
+    }
+    &,
+    .menubtn:hover {
+      color: blue !important;
+    }
+  }
+  .menuImg{
+    width: 100px;
+  }
+  .menuText{
+    line-height: 81px;
+  }
+}
+@media all and (max-width: 767px) {
+  .imageZoom {
+    overflow: hidden;
+    height: 713px !important;
+    btn {
+      width: 100px;
+    }
+  }
+  .image-text {
+    position: relative;
+    top: -360px;
+    // background-color: black !important;
+    height: fit-content !important;
+    btn:hover {
+      background-color: #cccccc;
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .imageZoom1 {
+    overflow: hidden;
+    display: block;
+    height: 420px !important;
+    btn {
+      width: 100px;
+    }
+  }
+
+  .image-text1 {
+    position: relative;
+    top: -390px;
+    // background-color: black !important;
+    height: fit-content !important;
+    btn:hover {
+      background-color: #cccccc;
+    }
+  }
+}
+.new {
+  .btn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+.link:hover {
+  .link1 {
+    text-decoration: underline !important;
+  }
+  .btn {
+    background-color: #013bac;
+  }
+}
+.colorFooter {
+  background-color: #000000;
+  color: white;
+  &::after {
+    color: white !important;
+    // background-color: white;
+  }
+}
+.black-accordion {
+  --bs-accordion-active-bg: #000000;
+  --bs-accordion-active-color: #ffffff;
+
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+  // اختیاری: رنگ وقتی بسته است
+  --bs-accordion-btn-bg: #1a1a1a;
+  --bs-accordion-btn-color: #e0e0e0;
+
+  .accordion-button {
+    &:focus,
+    &:not(.collapsed) {
+      box-shadow: none !important;
+    }
+  }
+}
+.box {
+  background-color: #1a1a1a;
+  a:hover {
+    text-decoration: underline !important;
+  }
+}
+.selectMenu {
+  background-color: #000000;
+  color: #e0e0e0;
+}
+ul {
+  a:hover {
+    text-decoration: underline !important;
+  }
+}
+.iconBox {
+  height: 62px;
+  justify-content: space-around !important;
+}
+.lineCenter {
+  line-height: 62px;
+}
+.linkBox,
+.copyBox {
+  font-size: 14px;
+  a:hover {
+    text-decoration: underline !important;
+  }
+}
+.bigNav{
+  height: 48px;
+  .topGroup{
+    a:hover{
+      text-decoration: none !important;
+      border-bottom: 2px solid black;
+      padding-bottom: 4px;
+      
+    }
+  }
+}
+.Mtext1{
+  position: relative !important;
+  bottom: 70px;
+}
+.mobile{
+  height: 352px;
+}
