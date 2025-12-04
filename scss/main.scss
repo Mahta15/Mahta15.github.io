@@ -22,10 +22,10 @@
       color: blue !important;
     }
   }
-  .menuImg{
+  .menuImg {
     width: 100px;
   }
-  .menuText{
+  .menuText {
     line-height: 81px;
   }
 }
@@ -46,6 +46,10 @@
       background-color: #cccccc;
     }
   }
+  .inRowP {
+    border-top: 1px solid #d3d3d3 !important;
+    border-bottom: 1px solid #d3d3d3 !important;
+  }
 }
 @media all and (min-width: 768px) {
   .imageZoom1 {
@@ -65,6 +69,10 @@
     btn:hover {
       background-color: #cccccc;
     }
+  }
+  .inRowP {
+    border-right: 1px solid #d3d3d3 !important;
+    border-left: 1px solid #d3d3d3 !important;
   }
 }
 .new {
@@ -137,21 +145,20 @@ ul {
     text-decoration: underline !important;
   }
 }
-.bigNav{
+.bigNav {
   height: 48px;
-  .topGroup{
-    a:hover{
+  .topGroup {
+    a:hover {
       text-decoration: none !important;
       border-bottom: 2px solid black;
       padding-bottom: 4px;
-      
     }
   }
 }
-.Mtext1{
+.Mtext1 {
   position: relative !important;
   bottom: 70px;
 }
-.mobile{
+.mobile {
   height: 352px;
 }
