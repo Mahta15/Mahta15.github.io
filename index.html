@@ -1,2132 +1,1986 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HP</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <title>apple</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- ----------NAV Mobile---------- -->
-    <nav class="navbar d-lg-none">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="images/HP_logo.svg" class="logo ms-2"
-        /></a>
-        <div class="d-flex">
-          <ul class="d-flex list-unstyled mb-0">
-            <li class="ms-4">
-              <a href="#" class="text-decoration-none text-black"
-                ><i class="bi bi-search fs-3"></i
-              ></a>
-            </li>
-            <li class="ms-4">
-              <a href="#" class="text-decoration-none text-black"
-                ><i class="bi bi-cart3 fs-3"></i
-              ></a>
-            </li>
-            <li class="ms-4">
-              <a href="#" class="text-decoration-none text-black"
-                ><i class="bi bi-person-circle fs-3"></i
-              ></a>
-            </li>
-          </ul>
-          <button
-            class="navbar-toggler menubtn border-0 ms-1"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <div
-          class="offcanvas offcanvas-end w-100"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header border-bottom border-black">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="images/HP_logo.svg" class="logo ms-2" />
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    Laptops
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseOne"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop1.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Laptops for Home
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop2.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Laptops for Work
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop3.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Mobile Workstation
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop4.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Laptops for Gaming
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <a href="#" class="text-decoration-none"
-                        ><div class="col d-flex">
-                          <i class="bi bi-ticket fs-4 text-secondary"></i>
-                          <p class="fs-5 ms-1 text-secondary">Laptop Deals</p>
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
-                  >
-                    Desktops
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mdesktop1.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Desktops for Home
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mdesktop2.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Desktops for Work
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mdesktop3.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">Workstation</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mdesktop4.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Desktops for Gaming
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <a href="#" class="text-decoration-none"
-                        ><div class="col d-flex">
-                          <i class="bi bi-ticket fs-4 text-secondary"></i>
-                          <p class="fs-5 ms-1 text-secondary">Desktop Deals</p>
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
-                  >
-                    Printers
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop1.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Printers for Home
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop2.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Printers for Work
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop3.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Ink, Tonner & Paper
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mlaptop4.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Large-Format Printers & Plotters
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <a href="#" class="text-decoration-none"
-                        ><div class="col d-flex">
-                          <i class="bi bi-ticket fs-4 text-secondary"></i>
-                          <p class="fs-5 ms-1 text-secondary">Printers Deals</p>
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseFour"
-                  >
-                    Accessories
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseFour"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mAcs1.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Computer Accessories
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mAcs2.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Gaming Accessories
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mAcs3.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Video & Voice Accessories
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mAcs4.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Care Packs & Sevices
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <a href="#" class="text-decoration-none"
-                        ><div class="col d-flex">
-                          <i class="bi bi-ticket fs-4 text-secondary"></i>
-                          <p class="fs-5 ms-1 text-secondary">Weekly Deals</p>
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFive"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseFive"
-                  >
-                    Subscriptions
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseFive"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msub1.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">HP All-in Plan</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msub2.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">Hp Instant Ink</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msub3.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Hp Laptop Subscriptions
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msub4.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Omen Gaming Subscriptions
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <a href="#" class="text-decoration-none"
-                        ><div class="col d-flex">
-                          <p class="fs-5 ms-1 text-secondary">
-                            My Subscriptions
-                          </p>
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseSix"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseSix"
-                  >
-                    Business Solution
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseSix"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mbusiness1.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                The Future of Work
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mbusiness2.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Software & Services
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mbusiness3.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">Computers</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/mbusiness4.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Printers & Digital Presses
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseSeven"
-                  >
-                    Support
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseSeven"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msup1.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Support & troubleshooting
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msup2.jpg"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">
-                                Software & Drivers
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msup3.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">Check warranty</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="#" class="text-decoration-none"
-                          ><div class="col-12 d-flex">
-                            <div class="col-4">
-                              <img
-                                src="images/msup4.avif"
-                                class="menuImg rounded"
-                              />
-                            </div>
-                            <div class="col-6">
-                              <p class="text-black menuText">Contact Us</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- ------------NAV------------ -->
-    <nav
-      class="navbar navbar-expand-lg d-none d-lg-flex p-0 border-bottom border-secoundary bigNav px-4"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="images/HP_logo.svg" class="logo ms-2"</a
-        >
-        <div class="topGroup">
-          <ul class="list-unstyled d-flex">
-            <li>
-              <a class="text-decoration-none text-dark ms-3" href="#"
-                >Products</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none text-dark ms-3" href="#"
-                >AIoT Solutions</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none text-dark ms-3" href="#"
-                >Business</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none text-dark ms-3" href="#"
-                >Community</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none text-dark ms-3" href="#"
-                >What's New</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none text-dark ms-3" href="#"
-                >Support</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none text-dark ms-3" href="#"
-                >Support</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="topIcons d-flex">
-          <ul class="d-flex list-unstyled mb-0">
-            <li class="ms-4">
-              <a href="#" class="text-decoration-none text-black"
-                ><i class="bi bi-search fs-5"></i
-              ></a>
-            </li>
-            <li class="ms-4">
-              <a href="#" class="text-decoration-none text-black"
-                ><i class="bi bi-cart3 fs-5"></i
-              ></a>
-            </li>
-            <li class="ms-4">
-              <a href="#" class="text-decoration-none text-black"
-                ><i class="bi bi-person-circle fs-5"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- ------------PhotoScroller Mobile--------- -->
-    <!-- کاروسل اصلی سایت - کاملاً ریسپانسیو (موبایل و دسکتاپ جداگانه) -->
-    <div class="position-relative">
-      <!-- ====================== کاروسل موبایل (زیر 768px) ====================== -->
+    <!-- ----------------navM------------------- -->
+    <div class="nav flex justify-between h-[48px] w-[100%] md:hidden relative">
       <div
-        id="carouselMobile"
-        class="carousel slide d-md-none"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
+        class="w-[100%] h-[100vh] bg-white absolute flex-row justify-center hidden"
       >
-        <div class="carousel-inner">
-          <!-- اسلاید ۱ موبایل -->
-          <div class="carousel-item active">
-            <div class="card border-0 bg-black text-white">
-              <img
-                src="images/mobile1.avif"
-                class="card-img"
-                alt="Cyber Week Sale"
-              />
-              <div
-                class="card-img-overlay Mtext1 d-flex flex-column justify-content-end pb-5"
-              >
-                <h2 class="fs-3 fw-bold">Cyber Week Sale</h2>
-                <p class="fs-6 mb-3">
-                  Save up to 79% on select DOORBUSTERS + HP Financing.<br />
-                  Save up to 35% on select HP Care Packs.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-light rounded-0 text-black fw-semibold w-50"
-                  >Shop</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۲ موبایل -->
-          <div class="carousel-item">
-            <div class="card border-0">
-              <img
-                src="images/mobile2.avif"
-                class="card-img"
-                alt="HP All-In Plan"
-              />
-              <div
-                class="card-img-overlay Mtext1 text-center d-flex flex-column justify-content-end pb-5"
-              >
-                <h2 class="fs-3 text-black fw-bold">HP All-In Plan</h2>
-                <p class="text-black fs-5">Printer problems?</p>
-                <p class="text-black fs-5 fw-bold mb-3">
-                  We've got a plan for that.
-                </p>
-                <img
-                  src="images/mobile2k.avif"
-                  class="img-fluid mb-3"
-                  style="max-height: 70px"
-                  alt="Ink"
-                />
-                <a
-                  href="#"
-                  class="btn btn-primary rounded-0 text-white fw-semibold w-50"
-                  >Learn</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۳ موبایل -->
-          <div class="carousel-item">
-            <div class="card border-0">
-              <img
-                src="images/mobile3.avif"
-                class="card-img"
-                alt="AI Supercomputing"
-              />
-              <div
-                class="card-img-overlay Mtext1 d-flex flex-column justify-content-end pb-5 text-white"
-              >
-                <h2 class="fs-3 fw-bold text-black">AI Supercomputing<br />Goes Nano</h2>
-                <p class="fs-5 fw-bold mb-2 text-black">
-                  HP ZGX Nano AI Station & Toolkit
-                </p>
-                <p class="mb-3 text-black">Big AI performance. Tiny footprint.</p>
-                <div>
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-0 text-white me-2 fw-semibold"
-                    >Learn</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-outline-light rounded-0 fw-semibold"
-                    >Shop</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۴ موبایل -->
-          <div class="carousel-item">
-            <div class="card border-0 bg-black text-white">
-              <img
-                src="images/mobile4.avif"
-                class="card-img"
-                alt="Unlimited 5G"
-              />
-              <div
-                class="card-img-overlay Mtext1 d-flex flex-column justify-content-end pb-5"
-              >
-                <p class="fs-6 text-uppercase mb-2">
-                  Exclusively with HP Laptop Subscription
-                </p>
-                <h2 class="fs-3 fw-bold">
-                  Give yourself the gift of unlimited 5G
-                </h2>
-                <p class="mb-3">
-                  Stay productive & secure virtually anywhere with an HP laptop
-                  with 5G.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-light rounded-0 text-black fw-semibold w-50"
-                  >Shop</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۵ موبایل -->
-          <div class="carousel-item">
-            <div class="card border-0">
-              <img
-                src="images/mobile5.avif"
-                class="card-img"
-                alt="HP Envy Printers"
-              />
-              <div
-                class="card-img-overlay Mtext1 text-center d-flex flex-column justify-content-end pb-5 text-black"
-              >
-                <h2 class="fs-3 fw-bold">You dream it.<br />Envy does it</h2>
-                <p class="fs-5 fw-bold mb-4">HP Envy Printers</p>
-                <div>
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-0 text-white me-2 fw-semibold"
-                    >Learn</a
-                  >
-                  <a href="#" class="btn btn-outline-dark rounded-0 fw-semibold"
-                    >Shop</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- دکمه‌های کنترل موبایل -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselMobile"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselMobile"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- ====================== پایان کاروسل موبایل ====================== -->
-
-      <!-- ====================== کاروسل دسکتاپ (768px و بزرگ‌تر) ====================== -->
-      <div
-        id="carouselDesktop"
-        class="carousel slide d-none d-md-block"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-      >
-        <div class="carousel-inner">
-          <!-- اسلاید ۱ دسکتاپ -->
-          <div class="carousel-item active">
-            <div class="card text-bg-dark border-0">
-              <img
-                src="images/big1.jpg"
-                class="card-img"
-                alt="Cyber Week Sale"
-              />
-              <div class="card-img-overlay Mtext1 bg-black text-white">
-                <h2 class="card-title fs-2 fw-bold">Cyber Week Sale</h2>
-                <p class="card-text fs-6">
-                  Save up to 79% on select DOORBUSTERS, plus pay with HP
-                  Financing.<br />
-                  Save up to 35% on select HP Care Packs for your PC.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-light mt-3 rounded-0 text-black fw-semibold"
-                  >Shop</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۲ دسکتاپ -->
-          <div class="carousel-item">
-            <div class="card border-0">
-              <img
-                src="images/big2.jpg"
-                class="card-img w-100"
-                alt="HP All-In Plan"
-              />
-              <div class="card-img-overlay Mtext1">
-                <h2 class="card-title fs-2 text-black fw-bold">
-                  HP All-In Plan
-                </h2>
-                <p class="card-text text-black fs-5">Printer problems?</p>
-                <p class="card-text text-black fs-5 fw-bold">
-                  We've got a plan for that.
-                </p>
-                <img
-                  src="images/mobile2k.avif"
-                  class="img-fluid mt-3 w-auto"
-                  style="max-height: 80px"
-                  alt="Ink"
-                />
-                <a
-                  href="#"
-                  class="btn btn-primary mt-3 rounded-0 text-white fw-semibold"
-                  >Learn</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۳ دسکتاپ -->
-          <div class="carousel-item">
-            <div class="card text-bg-dark bg-white border-0">
-              <img
-                src="images/big3.png"
-                class="card-img"
-                alt="AI Supercomputing"
-              />
-              <div class="card-img-overlay Mtext1 bg-white text-start">
-                <h2 class="card-title text-black fs-2 fw-bold">
-                  AI Supercomputing<br />Goes Nano
-                </h2>
-                <p class="card-text text-black fs-4 fw-bold">
-                  HP ZGX Nano AI Station and ZGX Toolkit
-                </p>
-                <p class="card-text text-black fs-5">
-                  Big AI performance. Tiny footprint.
-                </p>
-                <div class="mt-4">
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-0 text-white me-3 fw-semibold"
-                    >Learn</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-light border border-primary rounded-0 text-primary fw-semibold"
-                    >Shop</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۴ دسکتاپ -->
-          <div class="carousel-item">
-            <div class="card text-bg-dark border-0">
-              <img src="images/big4.jpg" class="card-img" alt="Unlimited 5G" />
-              <div class="card-img-overlay Mtext1 bg-black text-white">
-                <p class="card-text fs-6 text-uppercase">
-                  Exclusively with HP Laptop Subscription
-                </p>
-                <h2 class="card-title fs-2 fw-bold">
-                  Give yourself the gift of unlimited 5G
-                </h2>
-                <p class="card-text fs-5">
-                  Stay productive & secure virtually anywhere with an HP laptop
-                  with 5G.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-light mt-3 rounded-0 text-black fw-semibold"
-                  >Shop</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- اسلاید ۵ دسکتاپ -->
-          <div class="carousel-item">
-            <div class="card text-bg-dark border-0">
-              <img
-                src="images/big5.jpg"
-                class="card-img"
-                alt="HP Envy Printers"
-              />
-              <div class="card-img-overlay Mtext1 bg-white">
-                <h2 class="card-title text-black fs-2 fw-bold">
-                  You dream it.<br />Envy does it
-                </h2>
-                <p class="card-text text-black fs-4 fw-bold">
-                  HP Envy Printers
-                </p>
-                <div class="mt-4">
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-0 text-white me-3 fw-semibold"
-                    >Learn</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-light border border-primary rounded-0 text-primary fw-semibold"
-                    >Shop</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- دکمه‌های کنترل دسکتاپ -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselDesktop"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselDesktop"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- ====================== پایان کاروسل دسکتاپ ====================== -->
-    </div>
-
-    <!-- ---------------------- -->
-
-    <div class="container-fluid p-0 m-0">
-      <div class="container-fluid my-3">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2>Explore HP Products</h2>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid banner mx-0">
-        <div class="row mx-md-auto w-100 row1 p-md-3">
-          <div class="col-12 col-md-2">
-            <div class="row inRowP p-0 flex-md-column">
-              <div class="col-6 p-0">
-                <img src="images/laptop1.avif" class="w-100 ms-md-5" />
-              </div>
-              <div
-                class="col-6 p-0 d-flex text-center align-items-center p-0 ms-md-5"
-              >
-                <a
-                  class="text-decoration-none text-dark pt-3 w-100 kala"
-                  href="#"
-                  >Laptops</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- --------- -->
-          <div class="col-12 col-md-2">
-            <div class="row inRowP p-0 flex-md-column">
-              <div class="col-6 p-0">
-                <img src="images/desktop.avif" class="w-100 ms-md-5" />
-              </div>
-              <div
-                class="col-6 p-0 d-flex text-center align-items-center ms-md-5"
-              >
-                <a
-                  class="text-decoration-none text-dark pt-3 w-100 kala"
-                  href="#"
-                >
-                  desktops
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- ------------- -->
-          <div class="col-12 col-md-2">
-            <div class="row inRowP p-0 flex-md-column">
-              <div class="col-6 p-0">
-                <img src="images/printer.avif" class="w-100 ms-md-5" />
-              </div>
-              <div
-                class="col-6 p-0 d-flex text-center align-items-center p-0 ms-md-5"
-              >
-                <a
-                  class="text-decoration-none text-dark pt-3 w-100 kala"
-                  href="#"
-                  >Printers</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- ------------- -->
-
-          <div class="col-12 col-md-2">
-            <div class="row inRowP p-0 flex-md-column">
-              <div class="col-6 p-0">
-                <img src="images/paper.avif" class="w-100 ms-md-5" />
-              </div>
-              <div
-                class="col-4 offset-1 p-0 d-flex text-center align-items-center p-0 ms-md-5"
-              >
-                <a
-                  class="text-decoration-none text-dark pt-3 w-100 kala text-wrap"
-                  href="#"
-                  >Cartridges & Paper
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- ----------- -->
-          <div class="col-12 col-md-2">
-            <div class="row inRowP p-0 flex-md-column">
-              <div class="col-6 p-0">
-                <img src="images/accessory.avif" class="w-100 ms-md-5" />
-              </div>
-              <div
-                class="col-4 offset-1 p-0 d-flex text-center align-items-center p-0 ms-md-5"
-              >
-                <a
-                  class="text-decoration-none text-dark pt-3 w-100 kala text-wrap"
-                  href="#"
-                  >Accessories
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- ------------- -->
-
-          <div class="col-12 col-md-2">
-            <div class="row inRowP p-0 flex-md-column">
-              <div class="col-6 p-0">
-                <img src="images/solution.avif" class="w-100 ms-md-5" />
-              </div>
-              <div
-                class="col-4 offset-1 p-0 d-flex text-center align-items-center p-0 ms-md-5"
-              >
-                <a
-                  class="text-decoration-none text-dark pt-3 w-100 kala text-wrap"
-                  href="#"
-                  >Commercial Solution
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -------Shop Cards--------- -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <h2 class="fs-1 shop">Shop these must-haves</h2>
-        </div>
-      </div>
-    </div>
-    <!-- ------------------------- -->
-    <div class="container-fluid w-100">
-      <div class="row w-100 mx-auto">
-        <div class="col-12 ms-1 mb-2 col-md-6 col-xl-3 mx-xl-0 mx-md-0">
-          <div class="card border border-0">
-            <img src="images/OmniDesk.avif" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">OmniDesk PCs</h4>
-              <p class="card-text">
-                Built-in AI makes everyday tasks effortless.
-              </p>
-              <a href="#" class="btn btn-primary rounded-0">Shop</a>
-            </div>
-          </div>
-        </div>
-        <!-- -------- -->
-        <div class="col-12 ms-1 mb-2 col-md-6 col-xl-3 mx-xl-0 mx-md-0">
-          <div class="card border border-0">
-            <img src="images/holiday_gift.avif" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">Holiday Gift Guide</h4>
-              <p class="card-text">Your guide to spectacular tech.</p>
-              <a href="#" class="btn btn-primary rounded-0">Shop</a>
-            </div>
-          </div>
-        </div>
-        <!-- ----------- -->
-        <div class="col-12 ms-1 mb-2 col-md-6 col-xl-3 mx-xl-0 mx-md-0">
-          <div class="card border border-0">
-            <img src="images/business-store.avif" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">Business Store</h4>
-              <p class="card-text">
-                Shop smarter. Work better. HP for business.
-              </p>
-              <a href="#" class="btn btn-primary rounded-0">Shop</a>
-            </div>
-          </div>
-        </div>
-        <!-- ------------- -->
-        <div class="col-12 ms-1 mb-2 col-md-6 col-xl-3 mx-xl-0 mx-md-0">
-          <div class="card border border-0">
-            <img src="images/monitor_deals.avif" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">HP Monitors</h4>
-              <p class="card-text">
-                Vibrant visuals, ergonomic comfort, and smart features.
-              </p>
-              <a href="#" class="btn btn-primary rounded-0">Shop</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -------image card------- -->
-    <div class="card text-bg-dark imageZoom d-md-none">
-      <img src="images/redImgMobile.avif" class="card-img" />
-      <div class="card-img-overlay image-text">
-        <h5 class="card-title fs-1">
-          We believe that technology is powering the future of work.
-        </h5>
-        <p class="card-text fs-5">
-          From simulation to data analysis, HP's technology enables Ferrari's
-          mastery: enhancing performance, precision and efficiency both
-          trackside and at the factory.
-        </p>
-        <a href="#" class="btn btn-light mt-2 rounded-0 text-black">Learn</a>
-      </div>
-    </div>
-    <div class="card text-bg-dark imageZoom1 d-none d-md-block">
-      <img src="images/redImg.jpeg" class="card-img img-fluid" />
-      <div class="card-img-overlay image-text1 w-50">
-        <h5 class="card-title fs-2 mb-3">
-          We believe that technology is powering the future of work.
-        </h5>
-        <p class="card-text fs-4">
-          From simulation to data analysis, HP's technology enables Ferrari's
-          mastery: enhancing performance, precision and efficiency both
-          trackside and at the factory.
-        </p>
-        <a href="#" class="btn btn-light mt-2 rounded-0 text-black">Learn</a>
-      </div>
-    </div>
-    <!-- -----new------- -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <h2 class="fs-1 shop">In the new</h2>
-        </div>
-      </div>
-    </div>
-    <!-- ----- -->
-    <div class="container-fluid px-4">
-      <div class="col-12">
-        <div class="card border border-0">
-          <img src="images/new1.png" class="card-img-top" />
-          <div class="card-body new">
-            <p class="card-text h4">
-              HP has been ranked the #1 Computer Brand ahead of all major
-              desktop, laptop, and tablet makers, according to the 2025 American
-              Customer Satisfaction Index. .
-            </p>
-            <div class="container-fluid">
-              <div class="row w-50">
-                <div class="col-12 d-flex pe-0 link">
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-5 d-flex justify-content-center align-items-center"
-                    >></a
-                  >
-                  <a href="#" class="ms-2 text-decoration-none link1">Shop</a>
-                </div>
-                <!-- <div class="col-6 ps-0 position-relative link">
-                <a href="#">Shop</a>
-              </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ------ -->
-      <div class="col-12">
-        <div class="card border border-0">
-          <img src="images/new-2.avif" class="card-img-top" />
-          <div class="card-body new">
-            <p class="card-text h4">
-              HP has placed in the top 1% of companies worldwide for
-              sustainability. Learn more about our journey in the 2024
-              Sustainable Impact Report.
-            </p>
-            <div class="container-fluid">
-              <div class="row w-100">
-                <div class="col-12 d-flex p-0 link">
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-5 d-flex justify-content-center align-items-center"
-                    >></a
-                  >
-                  <a href="#" class="ms-2 text-decoration-none link1"
-                    >Download the report</a
-                  >
-                </div>
-                <!-- <div class="col-9 ms-2 p-0 position-relative link">
-                <a href="#">Download the report</a>
-              </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -----FOOTER------ -->
-    <div class="container-fluid bg-black">
-      <div class="row">
-        <div class="col-12">
-          <div
-            class="accordion black-accordion"
-            id="accordionPanelsStayOpenExample"
-          >
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button colorFooter"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Related links
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse colorFooter"
-              >
-                <div class="accordion-body p-0">
-                  <div class="box w-100 px-3 py-1 d-inline-block">
-                    <a href="#" class="text-decoration-none text-light ps-2"
-                      >Black Friday Top Deals 2025</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >Cyber Monday 2025 Top Deals</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >All-in-One deals</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >Shop Laptops & 2-in-1 Computers</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >Shop HP Ink or Toner Cartridges</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >All HP Printers</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >HP Consumer Tech Support & Hardware</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >HP Laptops - HP® Store</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >Printers for Home & Office</a
-                    >
-                    <a
-                      href="#"
-                      class="border-start border-light text-decoration-none text-light px-2"
-                      >Small Business</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <form action="#">
-            <select
-              class="form-select selectMenu"
-              aria-label="Default select example"
+        <i class="bi bi-x-lg text-[20px] absolute right-[18px] top-[8px]"></i>
+        <form action="#">
+          <i
+            class="bi bi-search absolute bg-white text-[25px] top-[55px] left-[29px] text-[#333333]"
+          ></i
+          ><input
+            type="text"
+            class="w-[450px] h-[50px] bg-white mt-[50px] ml-[60px] text-[33px] text-[#333333]"
+            placeholder="Search"
+          />
+        </form>
+        <ul class="ml-[50px] mt-[50px]">
+          <span class="text-[gray] text-[22px]">Quick Links</span>
+          <li>
+            <a href="#" class="no-underline text-[#333333] text-[20px]"
+              ><i class="bi bi-arrow-right mr-[6px]"></i>Find a Store</a
             >
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </form>
+          </li>
+          <li>
+            <a href="#" class="no-underline text-[#333333] text-[20px]"
+              ><i class="bi bi-arrow-right mr-[6px]"></i>Apple Vision Pro</a
+            >
+          </li>
+          <li>
+            <a href="#" class="no-underline text-[#333333] text-[20px]"
+              ><i class="bi bi-arrow-right mr-[6px]"></i>AirPods</a
+            >
+          </li>
+          <li>
+            <a href="#" class="no-underline text-[#333333] text-[20px]"
+              ><i class="bi bi-arrow-right mr-[6px]"></i>Apple Intelligence</a
+            >
+          </li>
+          <li>
+            <a href="#" class="no-underline text-[#333333] text-[20px]"
+              ><i class="bi bi-arrow-right mr-[6px]"></i>Apple Trade In</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="w-[100%] h-[100vh] bg-white absolute flex-row justify-center hidden"
+      >
+        <i class="bi bi-x-lg text-[20px] absolute right-[18px] top-[8px]"></i>
+        <h2 class="mb-[30px] text-[28px] mt-[50px] ml-[40px]">
+          Your Bag is empty.
+        </h2>
+        <div class="ml-[40px] text-[19px] text-[gray]">
+          <a href="#" class="underline text-blue-700">sign in</a> to see if you
+          have any saved items
         </div>
-        <!-- ---------- -->
-        <div class="col-12 p-0 d-lg-none">
-          <div class="container-fluid">
-            <div class="row">
-              <div
-                class="accordion accordion-flush black-accordion"
-                id="accordionFlushExample"
-              >
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed colorFooter"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseOne"
-                    >
-                      About Us
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseOne"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body p-0">
-                      <ul class="list-group">
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >About Us</a
-                          >
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Contact HP
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Careers
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Investor relations
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Sustainable impact
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Inclusion at HP
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Newsroom
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Tech Takes
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >HP Store Newsletter
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >HP Printables Newsletter
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed colorFooter"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseTwo"
-                    >
-                      Ways to buy
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body p-0">
-                      <ul class="list-group">
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Shop online
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Call an HP rep
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Find a reseller
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Enterprise store
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Public sector purchasing
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed colorFooter"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseThree"
-                    >
-                      Support
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseThree"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body p-0">
-                      <ul class="list-group">
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Support</a
-                          >
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Download drivers
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Support & troubleshooting
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Community
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Authorized service providers
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Check repair status
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Fraud alert
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Security Center
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        <ul class="ml-[50px] mt-[50px]">
+          <span class="text-[gray] text-[22px]">My Profile</span>
+          <li class="mb-[6px] mt-[9px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[17px] font-bold"
+              ><i class="bi bi-box-seam mr-[10px]"></i>Orders</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[17px] font-bold"
+              ><i class="bi bi-bookmark mr-[10px]"></i>Your Saves</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[17px] font-bold"
+              ><i class="bi bi-gear-wide-connected mr-[10px]"></i>Account</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[17px] font-bold"
+              ><i class="bi bi-person-circle mr-[10px]"></i>Sign in</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="w-[100%] h-[100vh] bg-white absolute flex-row justify-center">
+        <i class="bi bi-x-lg text-[20px] absolute right-[18px] top-[8px]"></i>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed colorFooter"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseFour"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseFour"
-                    >
-                      HP Partners
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseFour"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body p-0">
-                      <ul class="list-group">
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >HP Amplify Partner Program
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >HP Partner Portal
-                          </a>
-                        </li>
-                        <li class="list-group-item border-black">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block"
-                            >Developers
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        <ul class="ml-[50px] mt-[50px]">
+          <li class="mb-[6px] mt-[9px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >Store</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >Mac</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >iPad</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >iPhone</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >Watch</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >Vision</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >AirPods</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >TV & Home</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >Entertainment</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >Accessories</a
+            >
+          </li>
+          <li class="mb-[6px]">
+            <a
+              href="#"
+              class="no-underline text-[#333333] text-[28px] font-[600]"
+              >Support</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="text-[#333333]">
+        <a href="#" class="no-underline"
+          ><i class="bi bi-apple text-[19px] pl-[16px] leading-[48px]"></i
+        ></a>
+      </div>
+      <ol class="text-[#333333] flex">
+        <li>
+          <a href="#"
+            ><i class="bi bi-search text-[19px] px-[8px] leading-[48px]"></i
+          ></a>
+        </li>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed colorFooter"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseFive"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseFive"
+        <li>
+          <a href="#"
+            ><i class="bi bi-basket3 text-[19px] px-[8px] leading-[48px]"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="bi bi-list text-[19px] pl-[8px] pr-[16px] leading-[48px]"
+            ></i
+          ></a>
+        </li>
+      </ol>
+    </div>
+    <!-- ---------------------navB----------------- -->
+    <nav
+      class="apple-nav-light fixed top-0 left-0 w-full z-50 px-6 py-3 hidden md:block"
+    >
+      <div class="max-w-[1400px] mx-auto flex items-center justify-center">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-black text-2xl hover:text-gray-600 transition-colors mr-[25px]"
+        >
+          <i class="fab fa-apple"></i>
+        </a>
+
+        <!-- Navigation Menu - Desktop Only -->
+        <ul class="nav-menu-desktop">
+          <!-- Store -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">Store</a>
+            <div class="submenu-desktop translate-x-[10%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-4 gap-10">
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop</h3>
+                    <a href="#" class="submenu-link-desktop">Shop the Latest</a>
+                    <a href="#" class="submenu-link-desktop">Mac</a>
+                    <a href="#" class="submenu-link-desktop">iPad</a>
+                    <a href="#" class="submenu-link-desktop">iPhone</a>
+                    <a href="#" class="submenu-link-desktop">Apple Watch</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Vision Pro</a
                     >
-                      Stay connected
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseFive"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body pt-1 pb-0 d-flex iconBox">
-                      <ul class="list-inline">
-                        <li class="list-inline-item ms-3">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block lineCenter"
-                            ><i class="bi bi-linkedin fs-1"></i
-                          ></a>
-                        </li>
-                        <li class="list-inline-item ms-3">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block lineCenter"
-                            ><i class="bi bi-facebook fs-1"></i
-                          ></a>
-                        </li>
-                        <li class="list-inline-item ms-3">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block lineCenter"
-                            ><i class="bi bi-instagram fs-1"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item ms-3">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block lineCenter"
-                            ><i class="bi bi-twitter-x fs-1"></i
-                          ></a>
-                        </li>
-                        <li class="list-inline-item ms-3">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block lineCenter"
-                            ><i class="bi bi-youtube fs-1"></i
-                          ></a>
-                        </li>
-                        <li class="list-inline-item ms-3">
-                          <a
-                            href="#"
-                            class="text-black text-decoration-none w-100 d-block lineCenter"
-                            ><i class="bi bi-music-note fs-1"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
+                    <a href="#" class="submenu-link-desktop">Accessories</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Quick Links</h3>
+                    <a href="#" class="submenu-link-desktop">Find a Store</a>
+                    <a href="#" class="submenu-link-desktop">Order Status</a>
+                    <a href="#" class="submenu-link-desktop">Apple Trade In</a>
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >College Student Offer</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop Special Stores</h3>
+                    <a href="#" class="submenu-link-desktop"
+                      >Certified Refurbished</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Education</a>
+                    <a href="#" class="submenu-link-desktop">Business</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Veterans and Military</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Government</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Gift Cards</h3>
+                    <a href="#" class="submenu-link-desktop">Send by Email</a>
+                    <a href="#" class="submenu-link-desktop">Check Balance</a>
+                    <a href="#" class="submenu-link-desktop">Redeem</a>
+                    <a href="#" class="submenu-link-desktop">Apple Gift Card</a>
+                    <a href="#" class="submenu-link-desktop">Gift Card Ideas</a>
                   </div>
                 </div>
               </div>
             </div>
+          </li>
+
+          <!-- Mac -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">Mac</a>
+            <div class="submenu-desktop translate-x-[8%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-5 gap-8">
+                  <div class="col-span-2">
+                    <h3 class="submenu-title-desktop">Explore Mac</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >MacBook Air</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >13-inch and 15-inch</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >MacBook Pro</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >14-inch and 16-inch</span
+                        >
+                      </div>
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >iMac</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >24-inch</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >Mac mini</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >Desktop</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >Mac Studio</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >Powerful</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >Mac Pro</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >Workstation</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop Mac</h3>
+                    <a href="#" class="submenu-link-desktop">Shop Mac</a>
+                    <a href="#" class="submenu-link-desktop">Mac Accessories</a>
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop">Mac Trade In</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >AppleCare+ for Mac</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More from Mac</h3>
+                    <a href="#" class="submenu-link-desktop">Mac Support</a>
+                    <a href="#" class="submenu-link-desktop">macOS Sequoia</a>
+                    <a href="#" class="submenu-link-desktop">Continuity</a>
+                    <a href="#" class="submenu-link-desktop">iCloud</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Mac for Business</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Education</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Compare Mac</h3>
+                    <a href="#" class="submenu-link-desktop"
+                      >Compare Mac models</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Switch from PC</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- iPad -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">iPad</a>
+            <div class="submenu-desktop translate-x-[4%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-4 gap-10">
+                  <div class="col-span-2">
+                    <h3 class="submenu-title-desktop">Explore iPad</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >iPad Pro</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >13-inch and 11-inch</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >iPad Air</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >13-inch and 11-inch</span
+                        >
+                      </div>
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >iPad</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >10.9-inch</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >iPad mini</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >8.3-inch</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop iPad</h3>
+                    <a href="#" class="submenu-link-desktop">Shop iPad</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >iPad Accessories</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop">iPad Trade In</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >AppleCare+ for iPad</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More from iPad</h3>
+                    <a href="#" class="submenu-link-desktop">iPad Support</a>
+                    <a href="#" class="submenu-link-desktop">iPadOS</a>
+                    <a href="#" class="submenu-link-desktop">iCloud</a>
+                    <a href="#" class="submenu-link-desktop">Education</a>
+                    <a href="#" class="submenu-link-desktop">Apple Pencil</a>
+                    <a href="#" class="submenu-link-desktop">Magic Keyboard</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- iPhone -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">iPhone</a>
+            <div class="submenu-desktop translate-x-[-2%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-4 gap-10">
+                  <div class="col-span-2">
+                    <h3 class="submenu-title-desktop">Explore iPhone</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >iPhone 15 Pro</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >6.1-inch and 6.7-inch</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >iPhone 15</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >6.1-inch and 6.7-inch</span
+                        >
+                      </div>
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >iPhone 14</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >6.1-inch</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >iPhone 13</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >6.1-inch</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >iPhone SE</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >4.7-inch</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop iPhone</h3>
+                    <a href="#" class="submenu-link-desktop">Shop iPhone</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >iPhone Accessories</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop">Apple Trade In</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >iPhone Upgrade Program</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >AppleCare+ for iPhone</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More from iPhone</h3>
+                    <a href="#" class="submenu-link-desktop">iPhone Support</a>
+                    <a href="#" class="submenu-link-desktop">iOS</a>
+                    <a href="#" class="submenu-link-desktop">iPhone Privacy</a>
+                    <a href="#" class="submenu-link-desktop">AppleCare+</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >iPhone for Business</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Watch -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">Watch</a>
+            <div class="submenu-desktop translate-x-[-7%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-4 gap-10">
+                  <div class="col-span-2">
+                    <h3 class="submenu-title-desktop">Explore Watch</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >Apple Watch Series 9</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >41mm and 45mm</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >Apple Watch Ultra 2</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >49mm</span
+                        >
+                      </div>
+                      <div>
+                        <a href="#" class="submenu-link-desktop font-medium"
+                          >Apple Watch SE</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >40mm and 44mm</span
+                        >
+                        <a
+                          href="#"
+                          class="submenu-link-desktop font-medium mt-3"
+                          >Apple Watch Hermès</a
+                        >
+                        <span class="block text-xs text-gray-500 mt-0"
+                          >Limited Edition</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop Watch</h3>
+                    <a href="#" class="submenu-link-desktop"
+                      >Shop Apple Watch</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Watch Bands</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Watch Studio</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Trade In</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >AppleCare+ for Watch</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More from Watch</h3>
+                    <a href="#" class="submenu-link-desktop">Watch Support</a>
+                    <a href="#" class="submenu-link-desktop">watchOS</a>
+                    <a href="#" class="submenu-link-desktop">Fitness+</a>
+                    <a href="#" class="submenu-link-desktop">Health & Safety</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Vision -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">Vision</a>
+            <div class="submenu-desktop translate-x-[-12%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-3 gap-10">
+                  <div>
+                    <h3 class="submenu-title-desktop">Explore Vision</h3>
+                    <a href="#" class="submenu-link-desktop font-medium"
+                      >Apple Vision Pro</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >Welcome to spatial computing</span
+                    >
+                    <a href="#" class="submenu-link-desktop font-medium mt-3"
+                      >visionOS</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >Powered by your eyes, hands, and voice</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop Vision</h3>
+                    <a href="#" class="submenu-link-desktop">Shop Vision Pro</a>
+                    <a href="#" class="submenu-link-desktop">Accessories</a>
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Demo Appointment</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >AppleCare+ for Vision Pro</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More from Vision</h3>
+                    <a href="#" class="submenu-link-desktop">Vision Support</a>
+                    <a href="#" class="submenu-link-desktop">visionOS</a>
+                    <a href="#" class="submenu-link-desktop">Developer</a>
+                    <a href="#" class="submenu-link-desktop">Business</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- AirPods -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">AirPods</a>
+            <div class="submenu-desktop translate-x-[-18%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-3 gap-10">
+                  <div>
+                    <h3 class="submenu-title-desktop">Explore AirPods</h3>
+                    <a href="#" class="submenu-link-desktop font-medium"
+                      >AirPods Pro 2nd gen</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >Active Noise Cancellation</span
+                    >
+                    <a href="#" class="submenu-link-desktop font-medium mt-3"
+                      >AirPods 3rd gen</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >Spatial Audio</span
+                    >
+                    <a href="#" class="submenu-link-desktop font-medium mt-3"
+                      >AirPods Max</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >Over-ear headphones</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop AirPods</h3>
+                    <a href="#" class="submenu-link-desktop">Shop AirPods</a>
+                    <a href="#" class="submenu-link-desktop">Accessories</a>
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop">Trade In</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >AppleCare+ for Headphones</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More from AirPods</h3>
+                    <a href="#" class="submenu-link-desktop">AirPods Support</a>
+                    <a href="#" class="submenu-link-desktop">Apple Music</a>
+                    <a href="#" class="submenu-link-desktop">Spatial Audio</a>
+                    <a href="#" class="submenu-link-desktop">Find My</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- TV & Home -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">TV & Home</a>
+            <div class="submenu-desktop translate-x-[-26%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-4 gap-8">
+                  <div>
+                    <h3 class="submenu-title-desktop">Explore TV & Home</h3>
+                    <a href="#" class="submenu-link-desktop font-medium"
+                      >Apple TV 4K</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >The ultimate TV experience</span
+                    >
+                    <a href="#" class="submenu-link-desktop font-medium mt-3"
+                      >HomePod</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >Powerful smart speaker</span
+                    >
+                    <a href="#" class="submenu-link-desktop font-medium mt-3"
+                      >HomePod mini</a
+                    >
+                    <span class="block text-xs text-gray-500 mt-0"
+                      >Room-filling sound</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop TV & Home</h3>
+                    <a href="#" class="submenu-link-desktop">Shop Apple TV</a>
+                    <a href="#" class="submenu-link-desktop">Shop HomePod</a>
+                    <a href="#" class="submenu-link-desktop">Accessories</a>
+                    <a href="#" class="submenu-link-desktop">Financing</a>
+                    <a href="#" class="submenu-link-desktop">AppleCare+</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More from TV & Home</h3>
+                    <a href="#" class="submenu-link-desktop">Apple TV+</a>
+                    <a href="#" class="submenu-link-desktop">Apple Music</a>
+                    <a href="#" class="submenu-link-desktop">Apple Fitness+</a>
+                    <a href="#" class="submenu-link-desktop">Home app</a>
+                    <a href="#" class="submenu-link-desktop">Siri</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Support</h3>
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple TV Support</a
+                    >
+                    <a href="#" class="submenu-link-desktop">HomePod Support</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Entertainment -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">Entertainment</a>
+            <div class="submenu-desktop translate-x-[-34%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-4 gap-8">
+                  <div>
+                    <h3 class="submenu-title-desktop">Explore Entertainment</h3>
+                    <a href="#" class="submenu-link-desktop">Apple One</a>
+                    <a href="#" class="submenu-link-desktop">Apple TV+</a>
+                    <a href="#" class="submenu-link-desktop">Apple Music</a>
+                    <a href="#" class="submenu-link-desktop">Apple Arcade</a>
+                    <a href="#" class="submenu-link-desktop">Apple Fitness+</a>
+                    <a href="#" class="submenu-link-desktop">Apple Podcasts</a>
+                    <a href="#" class="submenu-link-desktop">Apple Books</a>
+                    <a href="#" class="submenu-link-desktop">App Store</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Support</h3>
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple TV+ Support</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Music Support</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Arcade Support</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Fitness+ Support</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Podcasts Support</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop</h3>
+                    <a href="#" class="submenu-link-desktop">Gift Cards</a>
+                    <a href="#" class="submenu-link-desktop">Subscriptions</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Redeem Gift Card</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Send Gift Card by Email</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">More</h3>
+                    <a href="#" class="submenu-link-desktop">Apple Originals</a>
+                    <a href="#" class="submenu-link-desktop">Top Charts</a>
+                    <a href="#" class="submenu-link-desktop">For You</a>
+                    <a href="#" class="submenu-link-desktop">Family Sharing</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Accessories -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">Accessories</a>
+            <div class="submenu-desktop translate-x-[-42%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-5 gap-6">
+                  <div>
+                    <h3 class="submenu-title-desktop">Shop by Product</h3>
+                    <a href="#" class="submenu-link-desktop">Mac Accessories</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >iPhone Accessories</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >iPad Accessories</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple Watch Bands</a
+                    >
+                    <a href="#" class="submenu-link-desktop">AirPods Cases</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Vision Pro Accessories</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >TV & Home Accessories</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Explore Accessories</h3>
+                    <a href="#" class="submenu-link-desktop">MagSafe</a>
+                    <a href="#" class="submenu-link-desktop">AirTag</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Cases & Protection</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Charging</a>
+                    <a href="#" class="submenu-link-desktop">Audio</a>
+                    <a href="#" class="submenu-link-desktop">Cables</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Wireless Chargers</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Categories</h3>
+                    <a href="#" class="submenu-link-desktop">Best Sellers</a>
+                    <a href="#" class="submenu-link-desktop">New Arrivals</a>
+                    <a href="#" class="submenu-link-desktop">Limited Edition</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Certified Refurbished</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Clearance</a>
+                    <a href="#" class="submenu-link-desktop">Discontinued</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Support</h3>
+                    <a href="#" class="submenu-link-desktop"
+                      >Accessories Support</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Compatibility</a>
+                    <a href="#" class="submenu-link-desktop">Product Guides</a>
+                    <a href="#" class="submenu-link-desktop">Registration</a>
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Featured</h3>
+                    <a href="#" class="submenu-link-desktop">Pride Edition</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Black Unity Collection</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Made for Apple</a>
+                    <a href="#" class="submenu-link-desktop">Beats by Dre</a>
+                    <a href="#" class="submenu-link-desktop">Belkin</a>
+                    <a href="#" class="submenu-link-desktop">OtterBox</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Support -->
+          <li class="nav-item-desktop group">
+            <a href="#" class="nav-link-desktop">Support</a>
+            <div class="submenu-desktop translate-x-[-48%]">
+              <div class="submenu-wrapper">
+                <div class="grid grid-cols-4 gap-8">
+                  <div>
+                    <h3 class="submenu-title-desktop">Support by Product</h3>
+                    <a href="#" class="submenu-link-desktop">iPhone Support</a>
+                    <a href="#" class="submenu-link-desktop">Mac Support</a>
+                    <a href="#" class="submenu-link-desktop">iPad Support</a>
+                    <a href="#" class="submenu-link-desktop">Watch Support</a>
+                    <a href="#" class="submenu-link-desktop">AirPods Support</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Vision Pro Support</a
+                    >
+                    <a href="#" class="submenu-link-desktop"
+                      >Apple ID Support</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Service & Repair</h3>
+                    <a href="#" class="submenu-link-desktop">AppleCare+</a>
+                    <a href="#" class="submenu-link-desktop">Repair Options</a>
+                    <a href="#" class="submenu-link-desktop">Check Coverage</a>
+                    <a href="#" class="submenu-link-desktop">Find a Store</a>
+                    <a href="#" class="submenu-link-desktop">Genius Bar</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Authorized Service Providers</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">Resources</h3>
+                    <a href="#" class="submenu-link-desktop">Contact Support</a>
+                    <a href="#" class="submenu-link-desktop">Product Manuals</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Community Forums</a
+                    >
+                    <a href="#" class="submenu-link-desktop">Accessibility</a>
+                    <a href="#" class="submenu-link-desktop">Warranty</a>
+                    <a href="#" class="submenu-link-desktop"
+                      >Software Updates</a
+                    >
+                  </div>
+                  <div>
+                    <h3 class="submenu-title-desktop">My Support</h3>
+                    <a href="#" class="submenu-link-desktop">Sign In</a>
+                    <a href="#" class="submenu-link-desktop">Create Account</a>
+                    <a href="#" class="submenu-link-desktop">My Products</a>
+                    <a href="#" class="submenu-link-desktop">Support History</a>
+                    <a href="#" class="submenu-link-desktop">Repair Status</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Search and Bag -->
+          <li class="nav-item-desktop icons">
+            <a
+              href="#"
+              class="text-black text-xl hover:text-gray-600 transition-colors mx-2"
+            >
+              <i class="fas fa-search"></i>
+            </a>
+            <a
+              href="#"
+              class="text-black text-xl hover:text-gray-600 transition-colors mx-2"
+            >
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ----------apple watch-------------->
+    <!-- <div class="applewatch w-[100%] h-[580px]">
+      <a href="#" class="w-[100%] block">
+        <img src="images/applewatch.jpg" class="w-[100%] h-[585px] p-0"
+      /></a>
+      <div class="relative -top-[98%]">
+        <div class="w-[100%] h-[180px]">
+          <h2 class="text-[50px] flex justify-center items-center p-0">
+            <i class="bi bi-apple size-[50px] leading-[50px]"></i
+            ><span><span class="font-bold">Watch</span> Series 11</span>
+          </h2>
+          <p class="text-center text-[28px]">
+            Turn resolutions into routines.<br />
+            Quit quitting your fitness goals.
+          </p>
+        </div>
+
+        <div class="flex justify-center mx-auto w-[60%]">
+          <a
+            href="#"
+            class="block w-[130px] h-[43px] bg-[#0071e3] leading-[43px] text-center rounded-[25px] text-white"
+            >Learn more</a
+          >
+          <a
+            href="#"
+            class="block w-[72px] h-[43px] text-[#0071e3] leading-[43px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+            >Buy</a
+          >
+        </div>
+        <div class="relative -right-[44.5%] top-[80px]">
+          <video
+            src="videos/applewatch.mp4"
+            class="w-[138px] h-[160px] rounded-[30px]"
+            muted
+            data-inline-media
+          ></video>
+        </div>
+      </div>
+    </div> -->
+    <!-- ------------iphone------------- -->
+    <div class="mt-[30px]">
+      <div class="applewatch w-[100%] h-[580px]">
+        <a href="#" class="w-[100%] block">
+          <img src="images/iphone.jpg" class="w-[100%] h-[580px]"
+        /></a>
+        <div class="relative -top-[96%]">
+          <div class="w-[100%] h-[130px]">
+            <h2 class="text-[50px] flex justify-center items-center p-0">
+              <span class="font-bold">iPhone</span>
+            </h2>
+            <p class="text-center text-[28px]">
+              Say hello to the latest generation of iPhone.
+            </p>
+          </div>
+
+          <div class="flex justify-center mx-auto w-[60%]">
+            <a
+              href="#"
+              class="block w-[130px] h-[43px] bg-[#0071e3] leading-[43px] text-center rounded-[25px] text-white"
+              >Learn more</a
+            >
+            <a
+              href="#"
+              class="block w-[140px] h-[43px] text-[#0071e3] leading-[43px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+              >Shop iPhone</a
+            >
           </div>
         </div>
-        <!-- //////big////// -->
-        <div class="col-12 p-0 d-none d-lg-block">
-          <div class="footerLinks">
-            <ul class="list-unstyled d-flex">
-              <ul class="list-unstyled ms-5">
-                <div class="header fs-5 text-white my-2">About Us</div>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >About Us</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Contact HP</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Careers</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Investor relations</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Sustainable impact</a
-                  >
-                </li>
+      </div>
+      <!-- --------------ipadAir--------------- -->
+      <div class="applewatch w-[100%] h-[580px]">
+        <a href="#" class="w-[100%] block">
+          <img src="images/bigIpad.jpg" class="w-[100%] h-[580px]"
+        /></a>
+        <div class="relative -top-[96%]">
+          <div class="w-[100%] h-[130px]">
+            <div class="flex justify-center">
+              <img src="images/ipadAir.png" />
+            </div>
+            <p class="text-center text-[28px]">
+              Say hello to the latest generation of iPhone.
+            </p>
+          </div>
 
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Inclusion at HP</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Newsroom</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Tech Takes</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >HP Store Newsletter</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >HP Printables Newsletter</a
-                  >
-                </li>
-              </ul>
-              <ul class="list-unstyled ms-5">
-                <div class="header fs-5 text-white my-2">Ways to buy</div>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Shop online</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Call an HP rep</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Find a reseller</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Enterprise store</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Public sector purchasing</a
-                  >
-                </li>
-              </ul>
-              <ul class="list-unstyled ms-5">
-                <div class="header fs-5 my-2 text-white">Support</div>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Download drivers</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Support & troubleshooting</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Community</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Authorized service providers</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Check repair status</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Fraud alert</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Security Center</a
-                  >
-                </li>
-              </ul>
-              <ul class="list-unstyled ms-5">
-                <div class="header fs-5 my-2 text-white">HP Partners</div>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >HP Amplify Partner Program</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >HP Partner Portal</a
-                  >
-                </li>
-                <li class="listItems">
-                  <a href="#" class="text-decoration-none text-white"
-                    >Developers</a
-                  >
-                </li>
-              </ul>
-              <ul class="list-unstyled ms-5">
-                <div class="header fs-5 my-2 text-white">Stay connected</div>
-                <div class="pt-1 pb-0 d-flex iconBox">
-                  <ul class="list-inline justify-content-center">
-                    <li class="list-inline-item ms-1">
-                      <a
-                        href="#"
-                        class="text-white text-decoration-none w-100 d-block lineCenter"
-                        ><i class="bi bi-linkedin fs-5"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item ms-1">
-                      <a
-                        href="#"
-                        class="text-white text-decoration-none w-100 d-block lineCenter"
-                        ><i class="bi bi-facebook fs-5"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item ms-1">
-                      <a
-                        href="#"
-                        class="text-white text-decoration-none w-100 d-block lineCenter"
-                        ><i class="bi bi-instagram fs-5"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item ms-1">
-                      <a
-                        href="#"
-                        class="text-white text-decoration-none w-100 d-block lineCenter"
-                        ><i class="bi bi-twitter-x fs-5"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item ms-1">
-                      <a
-                        href="#"
-                        class="text-white text-decoration-none w-100 d-block lineCenter"
-                        ><i class="bi bi-youtube fs-5"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item ms-1">
-                      <a
-                        href="#"
-                        class="text-white text-decoration-none w-100 d-block lineCenter"
-                        ><i class="bi bi-music-note fs-5"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </ul>
+          <div class="flex justify-center mx-auto w-[60%]">
+            <a
+              href="#"
+              class="block w-[130px] h-[43px] bg-[#0071e3] leading-[43px] text-center rounded-[25px] text-white"
+              >Learn more</a
+            >
+            <a
+              href="#"
+              class="block w-[140px] h-[43px] text-[#0071e3] leading-[43px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+              >Shop iPhone</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- ---------------Box--------------- -->
+      <div class="grid grid-cols-12 p-3 gap-3">
+        <div class="col-span-6 h-[580px]">
+          <div class="">
+            <a href="#"
+              ><img src="images/airpod.jpg" class="w-[607px] h-[580px]"
+            /></a>
+          </div>
+          <div class="relative w-[80%] mx-auto -top-[90%]">
+            <div class="w-[100%] h-[130px]">
+              <h3 class="text-[40px] flex justify-center items-center p-0">
+                <span class="font-bold">AirPods Pro 3</span>
+              </h3>
+              <p class="text-center text-[21px]">
+                The world’s best in-ear<br />
+                Active Noise Cancellation.
+              </p>
+            </div>
+
+            <div class="flex justify-center mx-auto w-[60%]">
+              <a
+                href="#"
+                class="block w-[103px] h-[37px] bg-[#0071e3] leading-[37px] text-center rounded-[25px] text-white"
+                >Learn more</a
+              >
+              <a
+                href="#"
+                class="block w-[59px] h-[37px] text-[#0071e3] leading-[37px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-6 h-[580px]">
+          <div
+            class="bg-[url('/images/macbook2.jpg')] h-[580px] bg-cover bg-center"
+          >
+            <a href="#"> </a>
+          </div>
+          <div class="relative w-[80%] mx-auto -top-[90%]">
+            <div class="w-[100%] h-[110px]">
+              <h3 class="text-[40px] flex justify-center items-center p-0">
+                <span class="font-bold text-white">MacBook Pro 14”</span>
+              </h3>
+              <p class="text-center text-[21px] text-white">
+                Supercharged by M5.
+              </p>
+            </div>
+
+            <div class="flex justify-center mx-auto w-[60%]">
+              <a
+                href="#"
+                class="block w-[103px] h-[37px] bg-[#0071e3] leading-[37px] text-center rounded-[25px] text-white"
+                >Learn more</a
+              >
+              <a
+                href="#"
+                class="block w-[59px] h-[37px] text-[#0071e3] leading-[37px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ----------fitness------- -->
+        <div class="col-span-6 h-[580px]">
+          <div
+            class="bg-[url('/images/fitness.jpg')] h-[580px] bg-cover bg-center"
+          >
+            <a href="#"> </a>
+          </div>
+          <div class="relative w-[80%] mx-auto -top-[90%]">
+            <div class="w-[100%] h-[150px]">
+              <h3 class="text-[40px] flex justify-center items-center p-0">
+                <i class="bi bi-apple text-[32px] leading-[61px]"></i
+                ><span class="font-[600]">Fitness+</span>
+              </h3>
+              <p class="text-center text-[21px]">
+                Start the year strong with guided<br />
+                workouts and meditations.
+              </p>
+              <p class="text-[#6e6e73] text-[14px] text-center">
+                Get up to 3 months on us.
+              </p>
+            </div>
+
+            <div class="flex justify-center mx-auto w-[60%]">
+              <a
+                href="#"
+                class="block w-[103px] h-[37px] bg-[#0071e3] leading-[37px] text-center rounded-[25px] text-white"
+                >Learn more</a
+              >
+              <a
+                href="#"
+                class="block w-[92px] h-[37px] text-[#0071e3] leading-[37px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+                >Try it free</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------applewatch ultra----------- -->
+        <div class="col-span-6 h-[580px]">
+          <div
+            class="bg-[url('/images/watchUltra.jpg')] h-[580px] bg-cover bg-center"
+          >
+            <a href="#"> </a>
+          </div>
+          <div class="relative w-[80%] mx-auto -top-[90%]">
+            <div class="w-[100%] h-[107px]">
+              <h3 class="text-[40px] flex justify-center items-center p-0">
+                <i class="bi bi-apple text-[32px] leading-[61px] text-white"></i
+                ><span class="font-[600] text-white"
+                  ><span class="font-[700]">WATCH </span>ULTRA3</span
+                >
+              </h3>
+              <p class="text-center text-white text-[21px]">Personal beast.</p>
+            </div>
+
+            <div class="flex justify-center mx-auto w-[60%]">
+              <a
+                href="#"
+                class="block w-[103px] h-[37px] bg-[#0071e3] leading-[37px] text-center rounded-[25px] text-white"
+                >Learn more</a
+              >
+              <a
+                href="#"
+                class="block w-[59px] h-[37px] text-[#0071e3] leading-[37px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ------------------trade------------- -->
+        <div class="col-span-6 h-[580px]">
+          <div
+            class="bg-[url('/images/iphonemini.jpg')] h-[580px] bg-cover bg-center"
+          >
+            <a href="#"> </a>
+          </div>
+          <div class="relative w-[80%] mx-auto -top-[90%]">
+            <div class="w-[100%] h-[150px]">
+              <h3 class="text-[40px] flex justify-center items-center p-0">
+                <i class="bi bi-apple text-[32px] leading-[61px]"></i>
+                <span class="font-[700]">Trade In</span>
+              </h3>
+              <p class="text-center text-[21px] leading-[1.1]">
+                Get up to $180–$670<br />
+                in credit when you trade in<br />
+                iPhone 13 or higher.
+              </p>
+            </div>
+
+            <div class="flex justify-center mx-auto w-[60%]">
+              <a
+                href="#"
+                class="block w-[144px] h-[37px] bg-[#0071e3] leading-[37px] text-center rounded-[25px] text-white"
+                >Get your estimate</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- -------------apple card-------------- -->
+        <div class="col-span-6 h-[580px]">
+          <div
+            class="bg-[url('/images/applecard.jpg')] h-[580px] bg-cover bg-center"
+          >
+            <a href="#"> </a>
+          </div>
+          <div class="relative w-[80%] mx-auto -top-[90%]">
+            <div class="w-[100%] h-[120px]">
+              <h3 class="text-[40px] flex justify-center items-center p-0">
+                <i class="bi bi-apple text-[32px] leading-[61px]"></i
+                ><span class="font-[700]">Card</span>
+              </h3>
+              <p class="text-center text-[21px] leading-[1.1]">
+                Get up to 3% Daily Cash back <br />with every purchase.
+              </p>
+            </div>
+
+            <div class="flex justify-center mx-auto w-[60%]">
+              <a
+                href="#"
+                class="block w-[103px] h-[37px] bg-[#0071e3] leading-[37px] text-center rounded-[25px] text-white"
+                >Learn more</a
+              >
+              <a
+                href="#"
+                class="block w-[98px] h-[37px] text-[#0071e3] leading-[37px] text-center border border-[#0071e3] rounded-[25px] ml-[15px]"
+                >Apply now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------- -->
+    </div>
+    <!-- ----------------slider--------------- -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/fifaB.jpg)] bg-cover"
+        ></div>
+        <div
+          class="swiper-slide slide2 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/movieB.jpg)] bg-cover"
+        ></div>
+        <div
+          class="swiper-slide slide3 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/jackB.jpg)] bg-cover"
+        ></div>
+        <div
+          class="swiper-slide slide4 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/tehranB.jpg)] bg-cover"
+        ></div>
+        <div
+          class="swiper-slide slide5 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/tedB.jpg)] bg-cover"
+        ></div>
+        <div
+          class="swiper-slide slide6 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/shrinkB.jpg)] bg-cover"
+        ></div>
+        <div
+          class="swiper-slide slide7 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/pluribusB.jpg)] bg-cover"
+        ></div>
+        <div
+          class="swiper-slide slide8 w-[275px] h-[497px] md:w-[688px] md:h-[368px] slide1 block bg-[url(/images/eternityB.jpg)] bg-cover"
+        ></div>
+      </div>
+
+      <!-- فقط این دکمه‌ها باقی می‌مونن -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/music.jpg)] bg-cover bg-center"
+        ></div>
+        <div
+          class="swiper-slide slide2 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/bob.jpg)] bg-cover bg-center"
+        ></div>
+        <div
+          class="swiper-slide slide3 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/fitness.jpg)] bg-cover bg-center"
+        ></div>
+        <div
+          class="swiper-slide slide4 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/fitness2.jpg)] bg-cover bg-center"
+        ></div>
+        <div
+          class="swiper-slide slide5 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/music2.jpg)] bg-cover bg-center"
+        ></div>
+        <div
+          class="swiper-slide slide6 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/music3.jpg)] bg-cover bg-center"
+        ></div>
+        <div
+          class="swiper-slide slide7 w-[275px] h-[497px] md:w-[688px] md:h-[368px] block slide1 bg-[url(/images/cat.jpg)] bg-cover bg-center"
+        ></div>
+        <div
+          class="swiper-slide slide8 w-[275px] h-[497px] md:w-[688px] md:h-[368px] slide1 block bg-[url(/images/fitness3.jpg)] bg-cover bg-center"
+        ></div>
+      </div>
+
+      <!-- فقط این دکمه‌ها باقی می‌مونن -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+
+    <!-- --------------FooterS----------------- -->
+    <div class="footerS mx-[16px] md:hidden">
+      <ul class="pt-[17px] pb-[11px]">
+        <!-- ... همان متن‌های قبلی footer که تغییر نکرد ... -->
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >Features are subject to change. Some features, applications, and
+            services may not be available in all regions or all languages.</span
+          >
+        </li>
+      </ul>
+
+      <div class="according">
+        <div
+          class="contentBx relative w-full px-1 border-b border-gray-300 overflow-hidden"
+        >
+          <div
+            class="label relative w-full h-9 cursor-pointer flex items-center justify-between"
+          >
+            <p>Shop and Learn</p>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="content">
+            <ul class="ml-[15px] mt-[-5px] pb-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Store</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Mac</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >iPad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >iPhone</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Watch</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Vision</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >AirPods</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >TV & Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >AirTag</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Accessories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Gift Cards</a
+                >
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col-12">
-          <div class="linkBox">
-            <div class="w-100 px-3 py-1 d-inline-block">
-              <a href="#" class="text-decoration-none text-light ps-2"
-                >Recalls</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Product recycling</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Accessibility</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >CA Supply Chains Act</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Privacy</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Cookies Settings</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Your privacy choices</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Terms of use</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Limited warranty statement</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >Terms & conditions of sales & service</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >IP Notices</a
-              >
-              <a
-                href="#"
-                class="border-start border-light text-decoration-none text-light px-2"
-                >EU Data Act</a
-              >
-            </div>
+
+        <div
+          class="contentBx relative w-full px-1 border-b border-gray-300 overflow-hidden"
+        >
+          <div
+            class="label relative w-full h-9 cursor-pointer flex items-center justify-between"
+          >
+            <p>Apple Wallet</p>
+            <i class="bi bi-chevron-down"></i>
           </div>
-          <div class="copyBox mt-2">
-            <p class="text-white fs-6 ps-3">
-              ©2025 HP Development Company, L.P. The information contained
-              herein is subject to change without notice.
-            </p>
+          <div class="content">
+            <ul class="ml-[15px] mt-[-5px] pb-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Wallet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Card</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Pay</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Cash</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="contentBx relative w-full px-1 border-b border-gray-300 overflow-hidden"
+        >
+          <div
+            class="label relative w-full h-9 cursor-pointer flex items-center justify-between"
+          >
+            <p>Account</p>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="content">
+            <ul class="ml-[15px] mt-[-5px] pb-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Manage Your Apple Account</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Store Account</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >iCloud.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="contentBx relative w-full px-1 border-b border-gray-300 overflow-hidden"
+        >
+          <div
+            class="label relative w-full h-9 cursor-pointer flex items-center justify-between"
+          >
+            <p>Entertainment</p>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="content">
+            <ul class="ml-[15px] mt-[-5px] pb-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple One</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple TV</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Music</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Arcade</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Fitness+</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple News+</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Podcasts</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Books</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >App Store</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <!-- ------------------footerB------------- -->
+    <div class="footerB mx-[109px] px-[22px] hidden md:block">
+      <ul class="pt-[17px] pb-[11px]">
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >1. Trade‑in values will vary based on the condition, year, and
+            configuration of your eligible trade‑in device. Not all devices are
+            eligible for credit. You must be at least the age of majority to be
+            eligible to trade in for credit or for an Apple&nbsp;Gift&nbsp;Card.
+            Trade‑in value may be applied toward qualifying new device purchase,
+            or added to an Apple&nbsp;Gift&nbsp;Card. Actual value awarded is
+            based on receipt of a qualifying device matching the description
+            provided when estimate was made. Sales tax may be assessed on full
+            value of a new device purchase. In‑store trade‑in requires
+            presentation of a valid photo ID (local law may require saving this
+            information). Offer may not be available in all stores and may vary
+            between in‑store and online trade‑in. Some stores may have
+            additional requirements. Apple or its trade‑in partners reserve the
+            right to refuse, cancel, or limit quantity of any trade‑in
+            transaction for any reason. More details are available from Apple’s
+            trade-in partner for trade‑in and recycling of eligible devices.
+            Restrictions and limitations may&nbsp;apply.</span
+          >
+        </li>
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >To access and use all Apple Card features and products available
+            only to Apple Card users, you must add Apple Card to Wallet on an
+            iPhone or iPad that supports and has the latest version of iOS or
+            iPadOS. Apple Card is subject to credit approval, available only for
+            qualifying applicants in the United States, and issued by Goldman
+            Sachs Bank USA, Salt Lake City Branch.
+          </span>
+        </li>
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >Apple Payments Services LLC, a subsidiary of Apple Inc., is a
+            service provider of Goldman Sachs Bank USA for Apple Card and
+            Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC
+            is a bank.</span
+          >
+        </li>
+
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >If you reside in the U.S. territories, please call Goldman Sachs at
+            877-255-5923 with questions about Apple Card.
+          </span>
+        </li>
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >Learn more about how Apple Card applications are evaluated at
+            <a href="#" class="underline"
+              >support.apple.com/kb/HT209218</a
+            ></span
+          >
+        </li>
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >A subscription is required for Apple Arcade, Apple Fitness+, Apple
+            Music, and Apple TV.</span
+          >
+        </li>
+        <li class="mb-[9px]">
+          <span class="text-[#6c6c6d] text-[12px] leading-[0.8]"
+            >Features are subject to change. Some features, applications, and
+            services may not be available in all regions or all languages.</span
+          >
+        </li>
+      </ul>
+      <div class="border-y-[1px] border-y-[#e6e6e8] pt-[20px] flex">
+        <div class="mr-[70px]">
+          <div class="mb-[16px]">
+            <h3 class="text-[12px] font-[700]">Shop and Learn</h3>
+            <ul class="">
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Store</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Mac</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >iPad</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >iPhone</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Watch</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Vision</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >AirPods</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >TV & Home</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >AirTag</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Accessories</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Gift Cards</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h3 class="text-[12px] font-[700]">Apple Wallet</h3>
+            <ul class="">
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Wallet</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Card</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Pay</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Cash</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mr-[70px]">
+          <div class="mb-[16px]">
+            <h3 class="text-[12px] font-[700]">Account</h3>
+            <ul class="">
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Manage Your Apple Account</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Store Account</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >iCloud.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h3 class="text-[12px] font-[700]">Entertainment</h3>
+            <ul class="">
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple One</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple TV</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Music</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Arcade</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Fitness+</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple News+</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Podcasts</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >Apple Books</a
+                >
+              </li>
+
+              <li class="">
+                <a
+                  href="#"
+                  class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                  >App Store</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mr-[70px]">
+          <h3 class="text-[12px] font-[700]">Apple Store</h3>
+          <ul class="">
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Find a Store</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Genius Bar</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Today at Apple</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Group Reservations</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Apple Camp</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Apple Store App</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Certified Refurbished</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Apple Trade In</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+              ></a>
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Financing</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Carrier Deals at Apple</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Order Status</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-[12px] font-[400] text-[#49494a] hover:underline"
+                >Shopping Help</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mr-[70px]">
+          <div class="mb-[16px]"></div>
+          <div class="mb-[16px]"></div>
+          <div class="mb-[16px]"></div>
+          <div class=""></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------- -->
+    <!-- <div class="bg-black w-[100px] h-[100px]"></div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
